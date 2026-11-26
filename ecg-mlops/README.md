@@ -8,7 +8,7 @@ This extends my Introduction to ML summative (cardiovascular disease prediction 
 
 ## Links
 
-- **Video demo (YouTube):** [](https://youtu.be/Mo59oQXgkDo)
+-- **Video demo (YouTube):** https://youtu.be/Mo59oQXgkDo
 
 ## Project description
 
