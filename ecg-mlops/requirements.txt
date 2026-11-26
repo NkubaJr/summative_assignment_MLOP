@@ -1,0 +1,17 @@
+# Pinned: the saved model (models/ecg_hog_mlp.pkl) was created with these exact versions
+scikit-learn==1.9.1
+numpy==2.5.3
+scipy==1.18.1
+scikit-image==0.26.0
+opencv-python-headless==5.0.0.93
+joblib
+pillow
+# API and UI
+fastapi
+uvicorn[standard]
+python-multipart
+streamlit
+requests
+pandas
+matplotlib
+seaborn

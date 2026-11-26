@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/uploads/
+data/app.db
+data/features_cache.npz
+data/*.tmp.npz
+models/archive/
+models/*.tmp
+.ipynb_checkpoints/

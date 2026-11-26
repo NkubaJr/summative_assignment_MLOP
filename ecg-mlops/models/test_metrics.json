@@ -1,0 +1,66 @@
+{
+  "test_loss": 0.26623061299324036,
+  "accuracy": 0.946236559139785,
+  "precision_macro": 0.9472652253972584,
+  "recall_macro": 0.9396065257009859,
+  "f1_macro": 0.9425080479953176,
+  "precision_weighted": 0.9478491323710694,
+  "recall_weighted": 0.946236559139785,
+  "f1_weighted": 0.94602949830229,
+  "roc_auc_ovr_macro": 0.9925846243008106,
+  "per_class": {
+    "Abnormal_Heartbeat": {
+      "precision": 0.9767441860465116,
+      "recall": 0.8936170212765957,
+      "f1-score": 0.9333333333333333,
+      "support": 47.0
+    },
+    "History_of_MI": {
+      "precision": 0.9090909090909091,
+      "recall": 0.8823529411764706,
+      "f1-score": 0.8955223880597015,
+      "support": 34.0
+    },
+    "MI": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 48.0
+    },
+    "Normal": {
+      "precision": 0.9032258064516129,
+      "recall": 0.9824561403508771,
+      "f1-score": 0.9411764705882353,
+      "support": 57.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      42,
+      3,
+      0,
+      2
+    ],
+    [
+      0,
+      30,
+      0,
+      4
+    ],
+    [
+      0,
+      0,
+      48,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      56
+    ]
+  ],
+  "n_test": 186,
+  "source": "notebook",
+  "updated_at": "2026-11-26T21:00:53+00:00"
+}

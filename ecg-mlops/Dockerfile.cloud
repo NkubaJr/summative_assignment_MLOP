@@ -1,0 +1,27 @@
+# Single-container image for cloud hosting (Render, Hugging Face Spaces, Railway).
+# Runs the FastAPI backend on port 8000 inside the container and the Streamlit UI on $PORT.
+FROM python:3.13-slim
+
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app \
+    OMP_NUM_THREADS=1 \
+    API_URL=http://127.0.0.1:8000 \
+    PORT=7860
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends libglib2.0-0 && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY src ./src
+COPY app ./app
+COPY models ./models
+COPY data/train ./data/train
+COPY data/test ./data/test
+COPY start.sh .
+RUN chmod +x start.sh
+
+EXPOSE 7860
+CMD ["./start.sh"]

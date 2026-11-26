@@ -1,0 +1,10 @@
+.git
+__pycache__
+*.pyc
+notebook
+results
+data/uploads
+data/app.db
+data/features_cache.npz
+models/archive
+README.md

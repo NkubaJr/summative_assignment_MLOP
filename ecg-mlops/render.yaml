@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ecg-mlops
+    runtime: docker
+    dockerfilePath: ./Dockerfile.cloud
+    plan: free
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: RETRAIN_THRESHOLD
+        value: "20"
