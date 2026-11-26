@@ -9,6 +9,7 @@ This extends my Introduction to ML summative (cardiovascular disease prediction 
 ## Links
 
 -- **Video demo (YouTube):** https://youtu.be/Mo59oQXgkDo
+- **Docker Hub image:** https://hub.docker.com/r/nkubajr/ecg-mlops
 
 ## Project description
 
